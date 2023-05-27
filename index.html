@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-wrapper">
+      <!-- header section -->
+      <div class="header-section">
+        <div class="paragraphs">
+          <h2>Simple, traffic-based pricing</h2>
+          <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </div>
+        
+      </div>
+
+      <!-- card-section -->
+      <div class="card-wrapper">
+        <div class="card-component">
+          <!-- analytics -->
+          <div class="analytics">
+            <!-- pageviews -->
+            <p><span id="pageView">100K </span> PAGEVIEWS</p>
+
+            <!-- money -->
+            <h3>$<span id="price">16</span>.00<span class="month lg-month"> / month</span></h3>
+          </div>
+
+          <!-- slider -->
+          <div class="range-input">
+            <!-- <label for="range-input" aria-hidden="true"></label> -->
+            <input
+              type="range"
+              min="0"
+              max="4"
+              value=""
+              class="slider"
+              id="range-input"
+            />
+            <!-- <h3>$<span id="price">16</span>.00<span class="month sm-month"> / month</span></h3> -->
+          </div>
+
+          <!-- <h3>$<span id="price">16</span>.00<span class="month"> / month</span></h3> -->
+
+          <!-- payment options -->
+          <div class="payment-options">
+            <!-- monthly -->
+            <p>Monthly Billing</p>
+            <div class="toggle">
+              <label class="switch">
+                <input type="checkbox" class="checkbox" id="toggle" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+
+            <!-- Yearly -->
+            <p>Yearly Billing <span class="discount lg-discount"> 25% discount</span> <span class="discount sm-discount"> 25%</span></p>
+          </div>
+
+          <!-- gorizontal rule -->
+          <!-- <div class="horizontal-rule"></div> -->
+          <hr>
+
+          <div class="card-footer">
+            <!-- Benefits -->
+            <div class="benefits">
+              <div class="column">
+                <img src="images/icon-check.svg" alt="" />
+                <p>Unlimited websites</p>
+              </div>
+              <div class="column">
+                <img src="images/icon-check.svg" alt="" />
+                <p>100% data ownership</p>
+              </div>
+              <div class="column">
+                <img src="images/icon-check.svg" alt="" />
+                <p>Email reports</p>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <button>Start my trial</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

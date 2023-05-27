@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset */
+button{
+  text-decoration: none;
+  border: none;
+  background-color: hsl(227, 35%, 25%);
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  /* font-weight: 600; */
+
+  
+
+}
+
+button:hover{
+  box-shadow: hsl(227, 35%, 25%);
+}
+
+input#range-input {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 10px;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    to right,
+    hsl(174, 77%, 80%) 0%,
+    hsl(174, 77%, 80%) 50%,
+    hsl(224, 65%, 95%) 0%,
+    hsl(224, 65%, 95%) 100%
+  );
+}
+
+input#range-input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: hsl(174, 86%, 45%);
+  background-image: url(../images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input#range-input::-webkit-slider-thumb:hover{
+  background-color: hsl(174, 77%, 80%);
+}
+
+/* Switch section toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: .25rem;
+  background-color: #ccc;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  border-radius: 3.5rem;
+  background-color: hsl(223, 50%, 87%);
+}
+.switch .slider:before {
+  position: absolute;
+  background-color: #fff;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  bottom: 2px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.switch input:checked + .slider {
+  background-color: hsl(223, 50%, 87%);
+}
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #001250;
+}
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(1.8rem);
+  -ms-transform: translateX(1.8rem);
+  transform: translateX(1.8rem);
+}
+
+
+/* Body etc */
+body{
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  background-color: hsl(230, 100%, 99%);
+  color: hsl(225, 20%, 60%);
+}
+
+.header-section{
+  
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 15rem;
+  background-color: hsl(223, 50%, 87%, .65) ;
+  border-bottom-left-radius: 10rem;
+  
+}
+
+.header-section .paragraphs{
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5rem 0;
+}
+
+.header-section .paragraphs h2{
+  color: hsl(227, 35%, 25%);
+  line-height: 1.9;
+}
+
+.paragraphs h2{
+  font-size: 1.8rem;
+}
+
+.card-wrapper{
+  margin-top: -12rem;
+  
+
+}
+.card-component{
+  background-color: white;
+  max-width: 40rem;
+  padding: 2.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: .5rem;
+  /* box-shadow: 0px 12px 16px -1px #aaaaaa ;
+   */
+   box-shadow: inset 1px 1px 16px 10px hsl(223, 50%, 87%, .65);
+   /* border: 0.5px solid hsl(227deg 35% 25% / 29%); */
+   
+   
+}
+
+.card-component .analytics{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+}
+
+
+.analytics h3{
+  display: flex;
+  align-items: center;
+  /* gap: .5rem; */
+  font-size: 2rem;
+  color: hsl(227, 35%, 25%);;
+}
+.analytics .month{
+  font-size: initial;
+  margin-left: .5rem;
+  color: hsl(225, 20%, 60%);
+}
+
+.payment-options{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* align-content: right; */
+  padding: 2.5rem 0;
+  justify-content: right;
+  margin-right: 1.5rem;
+  
+  
+}
+
+/* discount */
+.payment-options .discount{
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  font-size: 10px;
+  padding: 0 .5rem;
+  border-radius: .25rem;
+}
+
+hr{width: 100%; display: inline; max-width: 100%; overflow: visible; padding: initial;}
+
+.card-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.benefits .column{
+  display: flex;
+  line-height: 2;
+  align-items: center;
+  gap: .8rem;
+  /* padding-top: 1rem; */
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  .card-wrapper{
+    margin-inline:1rem;
+  }
+}
+
+
+
+
+
+
+
